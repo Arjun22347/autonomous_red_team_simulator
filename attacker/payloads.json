@@ -1,0 +1,15 @@
+{
+  "modules": {
+    "login_form": [
+      {"username": "lab_user_1", "password": "password1"},
+      {"username": "lab_user_2", "password": "password2"},
+      {"username": "normal_user", "password": "normal_pw"},
+      {"username": "err500_user", "password": "pw"}
+    ],
+    "search": [
+      {"q":"needle"},
+      {"q":"haystack"},
+      {"q":"test"}
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  dvwa:
+    image: vulnerables/dvwa
+    container_name: dvwa
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
+      - MYSQL_DATABASE=dvwa
+    restart: unless-stopped
+
+  attacker:
+    build: ./attacker
+    container_name: attacker
+    depends_on:
+      - dvwa
+    network_mode: "service:dvwa"
+    volumes:
+      - ./attacker:/app
+    stdin_open: true
+    tty: true

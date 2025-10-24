@@ -1,6 +1,3 @@
-Autonomous Red‑Team Simulator — README.md
-
-Below is a ready‑to‑commit README.md you can paste into the repository root. It’s written to be clear, safety‑first, and publish‑ready (quickstart, examples, CI, contribution & security guidance). Copy the entire block and save it as README.md in ~/autonomous_red_team_simulator.
 
 # Autonomous Red‑Team Simulator (Lab‑only)
 
